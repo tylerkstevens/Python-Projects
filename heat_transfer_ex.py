@@ -23,8 +23,8 @@ def heat_conduction(pipe_radius, pipe_length, temperature_difference, material_t
 
 def main():
     # Parameters
-    pipe_radius = 0.05  # 1 cm
-    pipe_length = 5.0  # 10 meters
+    pipe_radius = 0.25  # 1 cm
+    pipe_length = 25.0  # 10 meters
     temperature_difference = 50.0  # 50 Kelvin
     material_thermal_conductivity = 200 * mega  # Copper thermal conductivity (W/(m*K))
 
