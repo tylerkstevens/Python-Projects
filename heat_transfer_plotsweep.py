@@ -1,4 +1,7 @@
 import numpy as np
+from scipy.constants import pi 
+from scipy.constants import kilo,mega
+from CoolProp import CoolProp
 import matplotlib.pyplot as plt
 
 # Define a simple mathematical model
@@ -8,7 +11,7 @@ def model(x, parameter):
 # Sweep a parameter and plot the results
 def sweep_and_plot():
     # Define the range of parameter values to sweep
-    parameter_values = np.linspace(1, 5, 10)
+    parameter_values = np.linspace(1,5,5)
 
     # Initialize lists to store results
     x_values = []
@@ -17,7 +20,7 @@ def sweep_and_plot():
     # Sweep the parameter values
     for parameter in parameter_values:
         # Generate x values (e.g., time points)
-        x = np.linspace(0, 10, 100)
+        x = np.linspace(0, 10, 50)
 
         # Calculate y values using the model
         y = model(x, parameter)
